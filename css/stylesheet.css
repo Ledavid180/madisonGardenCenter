@@ -14,6 +14,7 @@ body {
     text-align: center;
     font-family: Perpetua;
     font-size: 25px;
+    text-transform: uppercase;
 }
 .navBar li {
     display: inline;
@@ -131,6 +132,10 @@ body {
     background: #B8D3EC;
     color:#4B2E06;
     text-transform: uppercase;
+}
+.readOurStory:hover {
+    background-color:#4B2E06;
+    color:#B8D3EC;
 }
 .fern {
     text-align: right;
@@ -267,4 +272,11 @@ body {
 }
 .headerLines {
     text-align: center;
+}
+
+
+
+/*PLANTS PAGE STYLING*/
+.plantHero {
+    padding-left: 100px;
 }
