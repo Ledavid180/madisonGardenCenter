@@ -1,0 +1,224 @@
+body {
+    color:#4B2E06;
+
+}
+.miniNav {
+    text-align: right;
+}
+.logo {
+    padding-left: 465px;
+    padding-bottom: 20px;
+}
+.navBar ul{
+    list-style: none;
+    text-align: center;
+    font-family: Perpetua;
+    font-size: 25px;
+}
+.navBar li {
+    display: inline;
+    padding-right: 80px;
+    color:#4B2E06;
+}
+.navBar li:hover {
+    color:#7189A0;
+
+}
+.navBar a:hover {
+    text-decoration: none;
+}
+.navBar {
+    position: sticky;
+}
+.slide {
+    flex-shrink: 0;
+    max-height: 700px;
+    max-width: 1100px;
+    height: 100%;
+    width: 100%;
+}
+.slides::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.slides {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}/* Slideshow container */
+.slideshow-container {
+    max-width: 2000px;
+    padding-left: 340px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots{
+    text-align: center;
+    padding-top: 20px;
+}
+.active {
+  background-color: #B8D3EC;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.quoteBlurb{
+    text-align: center;
+    text-transform: uppercase;
+}
+.quoteBlurb h2 {
+    color: #7189A0;
+    font-family: Colonna MT;
+    font-size: 50px;
+
+}
+.quoteBlurb p {
+    color:#4B2E06;
+    font-family: Lucida Sans;
+    font-size: 25px;
+}
+.shovel {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 469px;
+}
+.blurbTwo h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.blurbTwoInfo {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+.readOurStory {
+    margin-left: 480px;
+    border: .5px;
+    padding: 18px;
+    border-radius: 3.5px;
+    background: #B8D3EC;
+    color:#4B2E06;
+    text-transform: uppercase;
+}
+.fern {
+    text-align: right;
+}
+.boxOne {
+    background-color: #DAF0E9;
+    padding-left: 100px;
+    padding: 70px;
+}
+.photoBlurb {
+    background-color: white;
+    padding: 11px;
+}
+.boxOneBlurb h2{
+    font-family: Century Gothic;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+}
+.boxOneBlurbP, .boxTwoBlurbP {
+    color: #4B2E06;
+    font-size: 25px;
+    font-family: Sitka Display;
+    text-align: center;
+}
+.boxOneBlurb a:hover, .boxOneBlurb a:hover, .noDecoration:hover {
+    text-decoration: none;
+}
+.boxTwo {
+    background-color:#B8D3EC;
+    padding: 70px;
+}
+.igBlurb {
+    padding: 90px;
+    text-align: center;
+}
+.igBlurb h2 {
+    font-family: Century Gothic;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.igBlurb a {
+    font-family: Sitka Banner;
+    font-size: 25px;
+    color: #4B2E06;
+}
+.igBlurb a:hover, .boxOneBlurb a:hover {
+    text-decoration: none;
+    font-size: 30px;
+    color:#B8D3EC;
+}
+.paddingForIg {
+    padding-bottom: 30px;
+}
+
+.paddingForIg a:hover {
+    text-decoration: none;
+}
+.boxTwoBLurb h2 {
+    font-family: Century Gothic;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+}
+.photoBlurbTwo {
+    background-color: white;
+    padding: 11px;
+}
+.paddingBoxTwo {
+    padding-left: 40px;
+}
+.emailListBlurb {
+    padding: 5px;
+    background-color: #EFF8F5;
+}
+.emailList {
+    font-family: Segoe UI Historic;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: right;
+}
+.footerBackground {
+    background-color: #164734;
+}
+.copyrightBackground {
+    background-color: #EFF8F5;
+}
+
+.submitButton {
+    
+}
