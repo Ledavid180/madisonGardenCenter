@@ -212,13 +212,56 @@ body {
     font-size: 20px;
     text-align: right;
 }
+.icons {
+    padding-left: 20px;
+}
 .footerBackground {
     background-color: #164734;
+    padding: 25px;
 }
 .copyrightBackground {
     background-color: #EFF8F5;
 }
-
+.emailAddress {
+    height: 40px;
+    border-width: .5px;
+}
 .submitButton {
-    
+    background-color: #B8D3EC;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+}
+.miniNavFooter {
+    text-align: center;
+}
+.footerVisitUs h3, .footerRowTwo h3, .footerRowThree h3{
+    color: #B8D3EC;
+    font-family: Segoe UI Historic;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.footerVisitUs p, .pageLinks {
+    color: white;
+    line-height: 1.9;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: Gill Sans MT;
+    margin: 0;
+}
+.footerRowTwo a:hover, .footerRowThree a:hover {
+    text-decoration: none;
+    color:#B8D3EC;
+}
+.miniFooter {
+    font-family:Segoe UI Historic;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.terms {
+    text-align: center;
+}
+.creatorTag {
+    text-align: right;
 }
