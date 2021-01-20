@@ -12,9 +12,9 @@ body {
 .navBar ul{
     list-style: none;
     text-align: center;
-    font-family: Perpetua;
-    font-size: 25px;
-    text-transform: uppercase;
+    font-family: Segoe UI Historic;
+    font-size: 20px;
+    text-transform: capitalize;
 }
 .navBar li {
     display: inline;
@@ -276,7 +276,46 @@ body {
 
 
 
+
 /*PLANTS PAGE STYLING*/
 .plantHero {
     padding-left: 100px;
+}
+.plantBlurbBackground{
+background-color: #DAF0E9;
+}
+.plantsBlurb, .bottomPlantBlurb {
+    padding: 110px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.postHeroWithCircles {
+    margin-left: -192px;
+}
+.circleList ul {
+    list-style: none;
+}
+
+.circleList  {
+    font-size: 20px;
+    font-style: none;
+    padding-top: 25px;
+}
+.circles {
+    border-radius: 50%;
+}
+
+.inBetween {
+    padding-bottom: 71px;
+}
+
+.inBetween p {
+    font-size: 17px;
+    font-style: unset;
+    padding-top: 40px;
+    font-family: sans-serif;
+}
+.bottomPlantBlurbBackground {
+    background-color:#B8D3EC;
 }
