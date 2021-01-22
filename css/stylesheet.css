@@ -359,3 +359,27 @@ body {
 .position {
     text-transform: uppercase;
 }
+
+
+
+
+/*VISIT US PAGE STYLING*/
+.mapMain {
+    padding: 60px;
+}
+.comeSeeUsBackground {
+    background-color: #B8D3EC;
+    padding: 50px;
+}
+.comeSeeUs {
+    text-transform: uppercase;
+    color: #4B2E06;
+    font-family: Century Gothic;
+    font-size: 50px;
+    padding-bottom: 15px;
+
+}
+.comeVisitUsBlurb {
+    font-size: 15px;
+    font-family: Segoe UI Historic;
+}
