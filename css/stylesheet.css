@@ -419,3 +419,38 @@ body {
 .productBlurb {
     font-family: Lucida Sans;
 }
+
+
+/*PRODUCTS PAGE STYLING*/
+.greenBackground {
+    background-color: #EFF8F5;
+}
+.blueBackground {
+    background-color: #B8D3EC;
+}
+.blueBackground, .greenBackground {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.productContainer {
+    padding: 60px;
+}
+.productTitle {
+    font-family: Century Gothic;
+    text-transform: uppercase;
+    text-align: center;
+}
+.smallTitles {
+    font-family: Segoe UI Historic;
+    text-transform: capitalize;
+    font-size: 35px;
+    text-align: center;
+}
+.productBlurb {
+    font-family: Lucida Sans;
+}
+.rowPadding {
+    padding-bottom: 70px;
+}
