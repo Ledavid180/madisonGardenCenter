@@ -421,6 +421,8 @@ body {
 }
 
 
+
+
 /*PRODUCTS PAGE STYLING*/
 .greenBackground {
     background-color: #EFF8F5;
@@ -438,7 +440,6 @@ body {
     padding: 60px;
 }
 .productTitle {
-    font-family: Century Gothic;
     text-transform: uppercase;
     text-align: center;
 }
