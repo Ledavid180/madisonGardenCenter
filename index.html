@@ -7,105 +7,45 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <title>Madison Garden Center</title>
 </head>
-<body>
+<body class="indexBody">
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 logo"> 
-                    <a href="./index.html"><img class="img-responsive" src="media/logoPlaceHolder.jpg" max-height="500px" /></a>
+            <div class="row navBarSection">
+                <div class="col-sm-3 logo"> 
+                    <a href="./index.html"><img class="img-responsive" src="media/logoPlaceHolder.jpg"  /></a>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 headerLines">
-                    <svg height="10" width="890">
-                        <line x1="2000" y1="0" x2="0" y2="0" style="stroke:rgb(0, 0, 0);stroke-width:.5" />
-                    </svg>
-                    <svg height="10" width="890">
-                        <line x1="2000" y1="0" x2="0" y2="0" style="stroke:rgb(0, 0, 0);stroke-width:.5" />
-                    </svg>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 navBar">
+                <div class="col-sm-9 navBar">
                     <ul>
                         <a href="./products.html"><li>products</li></a>
-                        <a href="./plantCare.html"><li>plant know-how</li></a>
-                        <a href="./visitUs.html"><li>visit us</li></a>
-                        <a href="./meetTheTeam.html"><li>meet the team</li></a>
+                        <a href="./plantCare.html"><li>plant care</li></a>
+                        <a href="./aboutUs.html"><li>about us</li></a>
                         <a href="./plants.html"><li>plants</li></a>
                     </ul>
                 </div>
-            </div><div class="col-sm-12 headerLines">
-                    <svg height="10" width="890">
-                        <line x1="2000" y1="0" x2="0" y2="0" style="stroke:rgb(0, 0, 0);stroke-width:.5" />
-                    </svg>
-                    <svg height="10" width="890">
-                        <line x1="2000" y1="0" x2="0" y2="0" style="stroke:rgb(0, 0, 0);stroke-width:.5" />
-                    </svg>
-                </div>
-            <div class="row">
-                <div class="col-sm-10">
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                        <img class="img-responsive" src="media/heroTen.jpg" style="width:80%">
-                        </div>
-                        <div class="mySlides fade">
-                        <img class="img-responsive" src="media/heroFourBetter.jpg" style="width:70%">
-                        </div>
-                        <div class="mySlides fade">
-                        <img class="img-responsive" src="media/heroThirteen.jpg" style="width:70%">
-                        </div>
-                        <div class="mySlides fade">
-                        <img class="img-responsive" src="media/heroOne.jpg" style="width:70%">
-                        </div>
-                        <div class="mySlides fade">
-                        <img class="img-responsive" src="media/heroTwo.jpg" style="width:70%">
-                        </div>
-                        <div class="mySlides fade">
-                        <img class="img-responsive" src="media/heroThree.jpg" style="width:70%">
-                        </div>
-                        <div class="mySlides fade">
-                        <img class="img-responsive" src="media/heroSeven.jpg" style="width:70%">
-                        </div>
-                        <div class="mySlides fade">
-                        <img class="img-responsive" src="media/heroNine.jpg" style="width:70%">
-                        </div>
-                    </div>
-                </div>
             </div>
-                        <div class="row">
-                            <div class="col-12-sm dots">
-                                <span class="dot"></span> 
-                                <span class="dot"></span> 
-                                <span class="dot"></span> 
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-                </div>
-        </div>
+        </div> 
      </header>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 quoteBlurb">
-                    <h2>"my garden is my most beautiful masterpiece"</h2>
-                    <p>-claude monet</p>
+        <div id="slider">
+            <figure>
+                <div class="littleSlide">
+                    <h1 class="littleCaption">our spring plants are back!</h1>
+                    <p class="littleCaptionTwo">check out our selection today!</p>
+                    <img src="media/thumbsUp.PNG" alt="">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 shovel">
-                    <img class="img-responsive" src="media/shovel.PNG" />
+                <div class="littleSlide">
+                    <h1 class="littleCaption">need to know what to do with your plants for the year?</h1>
+                    <p class="littleCaptionTwo">read through our plant care calendar!</p>
+                    <button class="littleCaptionButton"><a href="./plantCare.html">check it out</a></button>
+                    <img src="media/azaleaSlide.jpg" alt="">
                 </div>
-            </div>
+                
+                <img src="media/heroFour.jpg" alt="">
+                <img src="media/roseSlider.jpg" alt="">
+            </figure>
+        </div> 
 
+        <div class="container">
             <div class="row">
                 <div class="col-sm-12 blurbTwo">
                     <h2>plants. plant stuff. plant know-how.</h2>
@@ -226,10 +166,10 @@
                         <a href="" class="pageLinks">outdoor plants</a><br/>
                         <a href="" class="pageLinks">indoor plants</a>
 
-                        <h3>meet the team</h3>
+                        <h3>about us</h3>
                             <a href="" class="pageLinks">our story</a><br/>
-                            <a href="" class="pageLinks">members of the team</a><br/>
-                            <a href="" class="pageLinks">send us a message</a>
+                            <a href="" class="pageLinks">visit us</a><br/>
+                            <a href="" class="pageLinks">members of the team</a>
                     </div>
                     <div class="col-sm-4 footerRowThree">
                         <h3>products</h3>
@@ -265,9 +205,7 @@
         
         
         
-    <script src="js/appIndex.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
-  
-
   

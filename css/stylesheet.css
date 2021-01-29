@@ -1,20 +1,19 @@
 body {
     color:#4B2E06;
-
+        overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 .miniNav {
     text-align: right;
 }
-.logo {
-    padding-left: 465px;
-    padding-bottom: 20px;
+.navBarSection {
+    padding: 20px;
 }
 .navBar ul{
     list-style: none;
     text-align: center;
     font-family: Segoe UI Historic;
-    font-size: 20px;
-    text-transform: capitalize;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 .navBar li {
     display: inline;
@@ -29,89 +28,59 @@ body {
     text-decoration: none;
 }
 .navBar {
-    position: sticky;
+    padding-top: 30px;
+}       
+.indexBody {
+    margin: 0;
 }
-.slide {
-    flex-shrink: 0;
-    max-height: 700px;
-    max-width: 1100px;
-    height: 100%;
-    width: 100%;
+@keyframes slideShow{
+    0%{left: 0;}
+    20%{left: 0%;}
+    25%{left: -100%;}
+    45%{left: -100%;}
+    50%{left: -200%;}
+    70%{left: -200%;}
+    75%{left: -300%;}
+    95%{left: -300%;}
+    100%{left: -400%;}
 }
-.slides::-webkit-scrollbar {
-    display: none;
+#slider{
+    overflow: hidden;
+    z-index: bottom;
 }
-/* Hide scrollbar for IE, Edge and Firefox */
-.slides {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}/* Slideshow container */
-.slideshow-container {
-    max-width: 2000px;
-    padding-left: 340px;
+#slider figure img{
+    width: 20%;
+    float: left;
 }
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 15s slideShow infinite;
 }
-
-.dots{
-    text-align: center;
-    padding-top: 20px;
+#slider img {
+    height: 750px;
+    padding-bottom: 30px;
 }
-.active {
-  background-color: #B8D3EC;
+.littleCaption, .littleCaptionTwo {
+    position: absolute;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 4s;
-  animation-name: fade;
-  animation-duration: 4s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .6} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .6} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-
-.quoteBlurb{
-    text-align: center;
+.littleCaption {
+    padding-left: 275px;
+    padding-top: 90px;
+    font-size: 70px;
     text-transform: uppercase;
 }
-.quoteBlurb h2 {
-    color: #7189A0;
-    font-family: Colonna MT;
-    font-size: 50px;
-
-}
-.quoteBlurb p {
-    color:#4B2E06;
-    font-family: Lucida Sans;
-    font-size: 25px;
-}
-.shovel {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 469px;
+.littleCaptionTwo {
+    padding-left: 450px;
+    padding-top: 500px;
+    font-size: 40px;
+    text-transform: capitalize;
 }
 .blurbTwo h2 {
     text-align: center;
@@ -276,7 +245,6 @@ body {
 
 
 
-
 /*PLANTS PAGE STYLING*/
 .plantHero {
     padding-left: 100px;
@@ -389,39 +357,6 @@ body {
 
 
 
-/*PRODUCTS PAGE STYLING*/
-.greenBackground {
-    background-color: #EFF8F5;
-}
-.blueBackground {
-    background-color: #B8D3EC;
-}
-.blueBackground, .greenBackground {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-.productContainer {
-    padding: 60px;
-}
-.productTitle {
-    font-family: Century Gothic;
-    text-transform: uppercase;
-    text-align: center;
-}
-.smallTitles {
-    font-family: Segoe UI Historic;
-    text-transform: capitalize;
-    font-size: 35px;
-    text-align: center;
-}
-.productBlurb {
-    font-family: Lucida Sans;
-}
-
-
-
 
 /*PRODUCTS PAGE STYLING*/
 .greenBackground {
@@ -460,197 +395,23 @@ body {
 
 
 /*PLANT KNOW-HOW PAGE STYLING*/
-
-  
-.year, .date, .thePs{
-    margin-bottom: 10px;
-  }
-  
-  .thePs{
-    line-height: 20px;
-  }
-  
-  .TheAs{
-    text-decoration: none;
-    color: #FF462B;
-  }
-  
-  .clearfix{
-    clear: both;
-  }
-  
-  .animate{
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  
-  /* required */
-  .calendar{
-    position: relative;
-    border-radius: 4px;
-    overflow: hidden;
-    width: 800px;
-    height: 450px;
-    left: 50%;
-    margin-left: -400px;
-    margin-top: -225px;
-    top: 50%;
-    background-color: #ffffff;
-    color: #333333;
-  }
-  
-  .calendar h1, .calendar h2{
-    font-weight: 300;
-    font-size: 26px;
-    line-height: 28px;
-    text-transform: uppercase;
-    margin: 0px 0px 20px 0px;
-  }
-  
-  .calendar h1 span{
-    display: block;
-  }
-  
-  .calendar .col{
-    position: relative;
-    float: left;
-    height: 100%;
-  }
-  
-  .calendar .col .content{
-    padding: 40px;
-  }
-  
-  .calendar ul{
-    margin: 0px;
-  }
-  
-  .calendar ul li{
-    list-style: none;
-  }
-  
-  .calendar .leftCol{
-    width: 40%;
-    background-color:#B8D3EC;
-  }
-  
-  .calendar .noteList li{
-    color: #ffffff;
-    margin-bottom: 10px;
-  }
-  
-  .calendar .notes p,
-  .calendar .notes input,
-  .calendar .noteList li{
-    font-weight: 300;
-    font-size: 14px;
-  }
-  
-  .calendar .notes p{
-    border-bottom: solid 1px rgba(255,255,255,0.4);
-  }
-  
-  .calendar .notes input{
-    background-color:#B8D3EC;
-    color: #ffffff;
-    border: none;
-    width: 200px;
-  }
-  
-  .calendar .addNote,
-  .calendar .removeNote{
-    float: right;
-    color: rgba(255,255,255,0.4);
-    font-weight: bold;
-    margin-left: 20px;
-  }
-  
-  .calendar .addNote:hover,
-  .calendar .removeNote:hover{
-    color: #ffffff;
-  }
-  
-  .calendar .addNote{
-    font-size: 16px;
-  }
-  
-  .calendar .leftCol h1{
-    color: #ffffff;
-    margin-bottom: 40px;
-  }
-  
-  .calendar .rightCol{
-    width: 60%;
-  }
-  
-  .calendar .rightCol h2{
-    color: #C7BEBE;
-    text-align: right;
-    margin-bottom: 70px;
-  }
-  
-  .calendar .months li,
-  .calendar .weekday li,
-  .calendar .days li{
-    float: left;
-    text-transform: uppercase;
-  }
-  
-  .calendar .months li a,
-  .calendar .weekday li a,
-  .calendar .days li a{
-    display: block;
-    color: #747978;
-  }
-  
-  .calendar .months li a{
-    font-size: 10px;
-    color: #C7BEBE;
+.palmBackground {
+    position: absolute;
+    opacity: .5;
+}
+.plantKnowHowPadding {
+    padding: 50px;
+}
+.plantKnowHow {
     text-align: center;
-    width: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .calendar .months li .selected{
-    font-weight: bold;
-    color: #747978;
-  }
-  
-  .calendar .weekday li a{
-    width: 55px;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 12px;
-  }
-  
-  .calendar .days li{
-    width: 55px;
-  }
-  
-  .calendar .days li a{
-    width: 36px;
-    height: 24px;
-    text-align: center;
-    margin: auto auto;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-  }
-  
-  
-  .calendar .days li a:hover{
-    background-color: #EEEDE9;
-  }
-  
-  
-  
-  
-  /* placeholder color */
-  ::-webkit-input-placeholder {color: #ffffff; }
-  :-moz-placeholder {color: #ffffff; }
-  ::-moz-placeholder {color: #ffffff; }
-  :-ms-input-placeholder {color: #ffffff; }
+    text-transform: capitalize;
+}
+.plantBlurbWhite {
+    background-color: white;
+    padding: 20px;
+}
+.littleGreenBox {
+    position: absolute;
+    background-color: #DAF0E9;
+    padding: 100px;
+}
