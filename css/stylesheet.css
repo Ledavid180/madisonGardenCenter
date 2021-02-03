@@ -103,21 +103,44 @@ body {
         margin-left: -400%;
     }
 }
-.littleCaption, .littleCaptionTwo {
+.littleCaption, .littleCaptionTwo, .littleCaptionButton {
     color: white;
-    font-family:Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: bold;
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 .littleCaption {
     padding-top: 70px;
-    text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     text-transform: uppercase;
+    text-shadow: .5px .5px #070707;
 }
 .littleCaptionTwo {
-    text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     text-transform: capitalize;
+}
+.littleCaptionButton {
+    text-align: center;
+    font-size: 17px;
+
+}
+.littleCaptionButton a {
+    color: white;
+    text-transform: capitalize;
+}
+.littleCaptionButton a:hover {
+    text-decoration: none;
+}
+.littleCaptionButton button {
+    background-color:#B8D3EC;
+    padding: 5px;
+    border: none;
+    border-radius: .5;
+}
+.littleCaptionButton button:hover {
+    text-decoration: none;
+}
+.fernTwo {
+    text-align: left;
 }
 .blurbTwo h2 {
     text-align: center;
