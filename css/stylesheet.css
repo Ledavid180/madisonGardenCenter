@@ -1,6 +1,6 @@
 body {
     color:#4B2E06;
-        overflow-x: hidden; /* Hide horizontal scrollbar */
+        /*overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 .miniNav {
     text-align: right;
@@ -29,56 +29,93 @@ body {
 }
 .navBar {
     padding-top: 30px;
-}       
+}
 .indexBody {
     margin: 0;
+    padding: 0;
 }
-@keyframes slideShow{
-    0%{left: 0;}
-    20%{left: 0%;}
-    25%{left: -100%;}
-    45%{left: -100%;}
-    50%{left: -200%;}
-    70%{left: -200%;}
-    75%{left: -300%;}
-    95%{left: -300%;}
-    100%{left: -400%;}
-}
-#slider{
+.slider {
+    height: 500px;
+    width: 100%;
+    background-color: gray;
     overflow: hidden;
-    z-index: bottom;
 }
-#slider figure img{
+.sliderChild {
+    height: 500px;
+    width: 500%;
+    background-color: green;
+    animation: slider infinite 20s 2s;
+}
+.imagecon{
+    height: 500px;
     width: 20%;
+    background-color: gray;
     float: left;
 }
-#slider figure{
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 15s slideShow infinite;
+.imagecon:nth-child(1) {
+    background-image: url('../media/backgroundPalm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#slider img {
-    height: 750px;
-    padding-bottom: 30px;
+.imagecon:nth-child(2) {
+    background-image: url('../media/heroFour.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagecon:nth-child(3) {
+    background-image: url('../media/azaleaSlide.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagecon:nth-child(4) {
+    background-image: url('../media/heroThree.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagecon:nth-child(5) {
+    background-image: url('../media/backgroundPalm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes slider {
+    12.5%{
+        margin-left: -100%;
+    }
+    25%{
+        margin-left: -100%;
+    }
+    376.5%{
+        margin-left: -200%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    62.5%{
+        margin-left: -300%;
+    }
+    75%{
+        margin-left: -300%;
+    }
+    87.5%{
+        margin-left: -400%;
+    }
+    100%{
+        margin-left: -400%;
+    }
 }
 .littleCaption, .littleCaptionTwo {
-    position: absolute;
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: bold;
 }
 .littleCaption {
-    padding-left: 275px;
-    padding-top: 90px;
-    font-size: 70px;
+    padding-top: 70px;
+    text-align: center;
+    font-size: 50px;
     text-transform: uppercase;
 }
 .littleCaptionTwo {
-    padding-left: 450px;
-    padding-top: 500px;
+    text-align: center;
     font-size: 40px;
     text-transform: capitalize;
 }
@@ -176,16 +213,6 @@ body {
 .paddingBoxTwo {
     padding-left: 40px;
 }
-.emailListBlurb {
-    padding: 5px;
-    background-color: #EFF8F5;
-}
-.emailList {
-    font-family: Segoe UI Historic;
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: right;
-}
 .icons {
     padding-left: 20px;
 }
@@ -196,18 +223,8 @@ body {
 .copyrightBackground {
     background-color: #EFF8F5;
 }
-.emailAddress {
-    height: 40px;
-    border-width: .5px;
-}
-.submitButton {
-    background-color: #B8D3EC;
-    text-transform: uppercase;
-    border: none;
-    padding: 10px;
-}
 .miniNavFooter {
-    text-align: center;
+    text-align: right;
 }
 .footerVisitUs h3, .footerRowTwo h3, .footerRowThree h3{
     color: #B8D3EC;
