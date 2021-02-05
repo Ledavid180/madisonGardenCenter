@@ -55,6 +55,22 @@ body h1, body h2 {
     background-color: gray;
     float: left;
 }
+.imagecon:before, .imageconPlants:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.25);
+}
+.imagecon, .imageconPlants {
+    position: relative;
+    height: 500px;
+    width: 20%;
+    background-color: gray;
+    float: left;
+}
 .imagecon:nth-child(1) {
     background-image: url('../media/personalPicHeroOne.PNG');
     background-repeat: no-repeat;
@@ -376,22 +392,36 @@ body h1, body h2 {
 
 
 /*ABOUT US PAGE STYLING*/
-
+.littleMonstera {
+    position: absolute;
+    right: 0;
+}
+.longLeafy, .sunflower {
+    position: absolute;
+    left: 0;
+}
+.littleFern {
+    position: absolute;
+    right: 0;
+}
+.floorLeaf {
+    position: relative;
+    right: 0;
+    padding-left: 700px;
+}
 .aboutUsHeader h1, .ourTeam {
     color:#B8D3EC;
     text-align: center;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 60px;
     padding: 40px;
+    letter-spacing: 1px;
 }
 .aboutUsHeader h1 {
     color: #4B2E06;
 }
 .aboutUsPhoto {
     padding-left: 20%;
-}
-.aboutUsBlurbBackground {
-    background-color:#B8D3EC;
 }
 .aboutUsBlurb {
     padding: 20px;
@@ -459,16 +489,21 @@ body h1, body h2 {
 .rowPadding {
     padding-bottom: 70px;
 }
-
-
-
+.longLeafDown {
+    position: absolute;
+    right: 0;
+}
+.bigLeafDown {
+    position: absolute;
+    left: 0;
+}
 
 /*PLANT KNOW-HOW PAGE STYLING*/
 .littleLeaf {
     position: absolute;
     left: 0;
 }
-.bigLeaf {
+.sunflowerTwo {
     position: absolute;
     right: 0;
 }
@@ -477,9 +512,23 @@ body h1, body h2 {
     padding-bottom: 150px;
 }
 .plantKnowHow {
-    padding-top: 200px;
+    padding-top: 170px;
     text-align: center;
     text-transform: capitalize;
+}
+.longLeafLeft {
+    position: absolute;
+    left: 0;
+}
+.plantKnowHowBackground {
+    background-color: #DAF0E9;
+    padding: 40px;
+}
+.plantKnowHow h1, .aboutPlantingDiagram h2 {
+    font-size: 50px;
+}
+.plantKnowHow p, .aboutPlantingDiagram p {
+    font-size: 15px;
 }
 .calendarContainer {
     text-align: center;
@@ -489,23 +538,11 @@ body h1, body h2 {
     text-transform: capitalize;
     padding-top: 50px;
 }
+.aboutPlantingDiagramPadding {
+    background-color: #DAF0E9;
+    padding: 50px;
+}
 .theDiagram {
     padding-left: 100px;
-}
-
-.imagecon:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.25);
-}
-.imagecon {
-    position: relative;
-    height: 500px;
-    width: 20%;
-    background-color: gray;
-    float: left;
+    padding-bottom: 80px;
 }
