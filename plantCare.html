@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500&display=swap" rel="stylesheet">
     <title>Madison Garden Center</title>
 </head>
 <body>
@@ -26,15 +30,37 @@
         </div>
     </header>
     <main>
-        <img src="media/backgroundPalmCopy.jpg" class="img-responsive palmBackground" />
-        <div class="container plantKnowHowPadding">
+        <div class="container paddingPlantCarePage">
             <div class="row">
-                <div class="col-sm-2 plantBlurbWhite">
-                    <h1 class="plantKnowHow">we have the plant know-how!</h1>
-                    <p>Our talented staff here at Madison Garden Center is very enthusiastic about helping take care of your plants! We have provided this calendar below as a guideline for your plant upkeep. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quod veritatis ex non autem totam quas ut repellendus magni, magnam est?</p>
+                <div class="col-sm-6">
+                    <img src="media/plantCare.PNG" class="img-responsive" />
                 </div>
-                <div class="col-sm-10">
-                    <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=bWlrZS5tYWRpc29uZ2FyZGVuQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%2387a3bd&amp;color=%23cccc00&amp;color=%230B8043&amp;showNav=1&amp;showPrint=1&amp;showCalendars=0&amp;showTz=0&amp;title=Plant-Care%20Calendar" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                <div class="col-sm-6 plantKnowHow">
+                    <h1 class="">we know plants!</h1>
+                    <p>Our talented staff here at Madison Garden Center is very enthusiastic about helping take care of your plants! We have provided this calendar below as a guideline for your plant upkeep. We have also included our planting diagram for your convenience. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas possimus architecto commodi impedit. Iste dicta velit quae beatae, facere debitis tenetur blanditiis, exercitationem minima, reprehenderit voluptates voluptate ab laudantium sit. Omnis amet aperiam nemo debitis non sapiente veritatis ipsam suscipit rem exercitationem illum eligendi, repellendus tempore aspernatur beatae laudantium quae soluta. </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row calendarContainer">
+                <img src="media/littleLeaf.PNG" class="img-responsive littleLeaf" />
+                <div class="col-sm-12">
+                    <iframe id="plantCalendar" class="calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=bWlrZS5tYWRpc29uZ2FyZGVuQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%2387a3bd&amp;color=%23cccc00&amp;color=%230B8043&amp;showNav=1&amp;showPrint=1&amp;showCalendars=0&amp;showTz=0&amp;title=Plant-Care%20Calendar" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <img src="media/bigLeaf.jpg" class="img-responsive bigLeaf"/>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 aboutPlantingDiagram">
+                    <h2 id="plantingDiagram">about the planting diagram</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatibus quis ullam officiis dolorum numquam eaque quos veritatis sapiente ipsam laudantium tempora saepe tenetur doloribus temporibus dolores, quod earum amet?
+                    Recusandae iure doloribus animi numquam voluptatem maiores repellendus unde hic aliquid, corrupti quam nostrum quasi saepe corporis dolorem temporibus, provident optio eligendi accusamus omnis laudantium aut! Deleniti doloremque beatae eaque?
+                    Ea porro quos aperiam tempore iusto. Quaerat quo incidunt, reiciendis, assumenda consequatur aspernatur aliquam molestiae exercitationem, necessitatibus dolorum numquam beatae! Voluptatibus distinctio nulla perspiciatis deserunt recusandae autem eius molestiae aspernatur.</p>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-12 theDiagram">
+                    <img src="media/plantingDiagram.jpg" class="img-responsive" />
                 </div>
             </div>
         </div>
@@ -43,16 +69,7 @@
         <div class="emailListBlurb">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4">
-                        <p class="emailList">join our plant family</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <form action="#link">
-                            <input type="text" name="email" size="30" maxlength="35" value="Email Address" class="emailAddress" />
-                            <input type="submit" name="submit" value="JOIN" class="submitButton">   
-                        </form>
-                    </div>
-                    <div class="col-sm-4 miniNavFooter">
+                    <div class="col-sm-12 miniNavFooter">
                         <a href="https://www.instagram.com/madisongardencenter/" target="_blank" class="icons">
                             <img src="media/igIcon.png">
                         </a>
@@ -107,9 +124,6 @@
                     <div class="col-sm-4 terms">
                         <p>terms | conditions</p>
                     </div>
-                    <div class="col-sm-4 creatorTag">
-                        <p>designs by lauren</p>
-                    </div> 
                 </div>
             </div>
         </div>

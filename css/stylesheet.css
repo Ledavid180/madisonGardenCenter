@@ -1,6 +1,10 @@
 body {
     color:#4B2E06;
-        /*overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-family: 'Nanum Gothic', sans-serif;
+}
+body h1, body h2 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 .miniNav {
     text-align: right;
@@ -11,7 +15,6 @@ body {
 .navBar ul{
     list-style: none;
     text-align: center;
-    font-family: Segoe UI Historic;
     font-size: 15px;
     text-transform: uppercase;
 }
@@ -53,27 +56,27 @@ body {
     float: left;
 }
 .imagecon:nth-child(1) {
-    background-image: url('../media/backgroundPalm.jpg');
+    background-image: url('../media/personalPicHeroOne.PNG');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .imagecon:nth-child(2) {
-    background-image: url('../media/heroFour.jpg');
+    background-image: url('../media/personalPicHeroTwo.PNG');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .imagecon:nth-child(3) {
-    background-image: url('../media/azaleaSlide.jpg');
+    background-image: url('../media/perosnalPicHeroThree.PNG');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .imagecon:nth-child(4) {
-    background-image: url('../media/heroThree.jpg');
+    background-image: url('../media/personalPicHeroFour.PNG');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .imagecon:nth-child(5) {
-    background-image: url('../media/backgroundPalm.jpg');
+    background-image: url('../media/personalPicHeroOne.PNG');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -105,8 +108,8 @@ body {
 }
 .littleCaption, .littleCaptionTwo, .littleCaptionButton {
     color: white;
-    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    position: relative;
 }
 .littleCaption {
     padding-top: 70px;
@@ -132,9 +135,9 @@ body {
 }
 .littleCaptionButton button {
     background-color:#B8D3EC;
-    padding: 5px;
     border: none;
     border-radius: .5;
+    padding: 15px;
 }
 .littleCaptionButton button:hover {
     text-decoration: none;
@@ -179,7 +182,6 @@ body {
     padding: 11px;
 }
 .boxOneBlurb h2{
-    font-family: Century Gothic;
     text-transform: uppercase;
     font-size: 50px;
     text-align: center;
@@ -187,7 +189,6 @@ body {
 .boxOneBlurbP, .boxTwoBlurbP {
     color: #4B2E06;
     font-size: 25px;
-    font-family: Sitka Display;
     text-align: center;
 }
 .boxOneBlurb a:hover, .boxOneBlurb a:hover, .noDecoration:hover {
@@ -202,12 +203,10 @@ body {
     text-align: center;
 }
 .igBlurb h2 {
-    font-family: Century Gothic;
     text-transform: uppercase;
     font-size: 40px;
 }
 .igBlurb a {
-    font-family: Sitka Banner;
     font-size: 25px;
     color: #4B2E06;
 }
@@ -224,7 +223,6 @@ body {
     text-decoration: none;
 }
 .boxTwoBLurb h2 {
-    font-family: Century Gothic;
     text-transform: uppercase;
     font-size: 50px;
     text-align: center;
@@ -243,7 +241,7 @@ body {
     background-color: #164734;
     padding: 25px;
 }
-.copyrightBackground {
+.copyrightBackground, .emailListBlurb {
     background-color: #EFF8F5;
 }
 .miniNavFooter {
@@ -251,7 +249,6 @@ body {
 }
 .footerVisitUs h3, .footerRowTwo h3, .footerRowThree h3{
     color: #B8D3EC;
-    font-family: Segoe UI Historic;
     font-size: 25px;
     text-transform: uppercase;
 }
@@ -261,7 +258,6 @@ body {
     list-style: none;
     text-transform: capitalize;
     font-size: 20px;
-    font-family: Gill Sans MT;
     margin: 0;
 }
 .footerRowTwo a:hover, .footerRowThree a:hover {
@@ -269,7 +265,6 @@ body {
     color:#B8D3EC;
 }
 .miniFooter {
-    font-family:Segoe UI Historic;
     font-size: 15px;
     text-transform: uppercase;
 }
@@ -278,6 +273,15 @@ body {
 }
 .creatorTag {
     text-align: right;
+
+}
+.creatorTag a {
+    text-decoration: none;
+    color: #4B2E06;
+}
+.creatorTag a:hover {
+    text-decoration: none;
+    color:#B8D3EC;
 }
 .headerLines {
     text-align: center;
@@ -286,6 +290,48 @@ body {
 
 
 /*PLANTS PAGE STYLING*/
+.sliderChildPlants {
+    height: 500px;
+    width: 500%;
+    background-color: green;
+    animation: slider infinite 25s 2s;
+}
+.imageconPlants {
+    height: 500px;
+    width: 20%;
+    background-color: gray;
+    float: left;
+}
+.imageconPlants:nth-child(1) {
+    background-image: url('../media/heroThirteen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imageconPlants:nth-child(2) {
+    background-image: url('../media/plantHeroTwo.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imageconPlants:nth-child(3) {
+    background-image: url('../media/plantsHeroOne.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imageconPlants:nth-child(4) {
+    background-image: url('../media/plantHeroThree.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imageconPlants:nth-child(5) {
+    background-image: url('../media/plantHeroFour.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imageconPlants:nth-child(6){
+    background-image: url('../media/heroThirteen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .plantHero {
     padding-left: 100px;
 }
@@ -293,7 +339,6 @@ body {
     background-color: #DAF0E9;
 }
 .plantsBlurb, .bottomPlantBlurb {
-    font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     text-align: center;
     padding: 60px;
@@ -330,10 +375,9 @@ body {
 
 
 
-/*MEET THE TEAM PAGE STYLING*/
+/*ABOUT US PAGE STYLING*/
 
 .aboutUsHeader h1, .ourTeam {
-    font-family: 'Arial Narrow', Arial, sans-serif;
     color:#B8D3EC;
     text-align: center;
     text-transform: uppercase;
@@ -351,15 +395,11 @@ body {
 }
 .aboutUsBlurb {
     padding: 20px;
-    font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
     text-align: center;
 }
 .littlePadding {
     padding-bottom: 25px;
-}
-.name {
-    font-family: Century Gothic;
 }
 .name, .favoritePlant, .favoriteProduct {
     text-transform: capitalize;
@@ -367,11 +407,6 @@ body {
 .position {
     text-transform: uppercase;
 }
-
-
-
-
-/*VISIT US PAGE STYLING*/
 .mapMain {
     padding: 60px;
 }
@@ -382,14 +417,12 @@ body {
 .comeSeeUs {
     text-transform: uppercase;
     color: #4B2E06;
-    font-family: Century Gothic;
     font-size: 50px;
     padding-bottom: 15px;
 
 }
 .comeVisitUsBlurb {
     font-size: 15px;
-    font-family: Segoe UI Historic;
 }
 .hoursAndNumber {
     text-transform: uppercase;
@@ -419,13 +452,9 @@ body {
     text-align: center;
 }
 .smallTitles {
-    font-family: Segoe UI Historic;
     text-transform: capitalize;
     font-size: 35px;
     text-align: center;
-}
-.productBlurb {
-    font-family: Lucida Sans;
 }
 .rowPadding {
     padding-bottom: 70px;
@@ -435,23 +464,48 @@ body {
 
 
 /*PLANT KNOW-HOW PAGE STYLING*/
-.palmBackground {
+.littleLeaf {
     position: absolute;
-    opacity: .5;
+    left: 0;
 }
-.plantKnowHowPadding {
-    padding: 50px;
+.bigLeaf {
+    position: absolute;
+    right: 0;
+}
+.paddingPlantCarePage {
+    padding-top: 60px;
+    padding-bottom: 150px;
 }
 .plantKnowHow {
+    padding-top: 200px;
     text-align: center;
     text-transform: capitalize;
 }
-.plantBlurbWhite {
-    background-color: white;
-    padding: 20px;
+.calendarContainer {
+    text-align: center;
 }
-.littleGreenBox {
+.aboutPlantingDiagram {
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 50px;
+}
+.theDiagram {
+    padding-left: 100px;
+}
+
+.imagecon:before {
+    content: '';
     position: absolute;
-    background-color: #DAF0E9;
-    padding: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.25);
+}
+.imagecon {
+    position: relative;
+    height: 500px;
+    width: 20%;
+    background-color: gray;
+    float: left;
 }
